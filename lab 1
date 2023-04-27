@@ -1,0 +1,33 @@
+#include <stdio.h>
+int addition(int a, int b){ 
+    int sum= a + b;
+    return sum;
+}
+int subtraction(int a, int b){
+    int difference = a - b;
+    return difference;
+}
+int multiply(int a, int b){
+    int multiply = a * b;
+    return multiply;
+}
+float division(float a, float b){
+    float divide = a / b;
+}
+float mod(int a, int b){
+    int rem = a % b;
+    return rem;
+}
+int main(){
+    int num1 , num2;
+    printf("enter the first number:");
+    scanf("%d" , &num1);
+    printf("enter the second number:");
+    scanf("%d" , &num2);
+    printf("arithmetic operations on %d and %d: \n" , num1, num2);
+    printf("addition: %d\n",addition(num1 , num2));
+    printf("subtraction: %d\n", subtraction(num1 , num2));
+    printf("multiplication: %d\n", multiply(num1 , num2));
+    printf("division: %f\n", division(num1 , num2));
+    printf("modulus: %f\n", mod (num1 , num2));
+    return 0;
